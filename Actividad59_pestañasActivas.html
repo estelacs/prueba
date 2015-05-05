@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>Actividad59_pestañas activas</title>
+		<meta name="description" content="">
+		<meta name="author" content="udaw2">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+		<style type="text/css">
+			ul {
+				list-style-type: none;
+				position: relative;
+			}
+			li {
+				background-color: #999;
+				margin-right: 5px;
+			}
+			a {
+				text-decoration: none;
+			}
+			a:hover {
+
+				color: red;
+			}
+
+			#lineblock li {
+				display: inline-block;
+				margin-right: 0.5em;
+				font-size: 1.3em;
+				padding: .5em;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+			div.contenido {
+				border: 2px solid;
+				width: 750px;
+				height: 400px;
+				position: absolute;
+				background: #999;
+				left: 40px;
+				top: 35;
+			}
+			#elemento1 {
+				z-index: 6;
+			}
+			#elemento2 {
+				z-index: 5;
+			}
+			#elemento3 {
+				z-index: 4;
+			}
+			#elemento4 {
+				z-index: 3;
+			}
+			#elemento5 {
+				z-index: 2;
+			}
+			#pes1:hover div {
+				z-index: 7;
+			}
+			#pes2:hover div {
+				z-index: 7;
+			}
+			#pes3:hover div {
+				z-index: 7;
+			}
+			#pes4:hover div {
+				z-index: 7;
+			}
+			#pes5:hover div {
+				z-index: 7;
+			}
+			@media screen and (max-width: 900px) {
+				#lineblock li {
+					display: block;
+					position: static;
+					width: 100px;
+					border-radius: 5px;
+				}
+				div.contenido {
+					left: 150px;
+					top: 0px;
+					max-width: 80%;
+					overflow: auto;
+				}
+
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="contenedor">
+			<header>
+				<h1>Pestañas Activas Grandes</h1>
+			</header>
+			<nav id="lineblock" class="">
+				<h3>inline-block</h3>
+				<ul>
+					<li id="pes1">
+						<a href="/">Elemento 1</a>
+						<div id="elemento1" class="contenido">
+							elemento1
+						</div>
+					</li>
+
+					<li id="pes2">
+						<a href="/">Elemento 2</a>
+						<div id="elemento2" class="contenido">
+							elemento2
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit, velit ac cursus aliquam, odio augue ultricies velit, non malesuada ante justo at nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent hendrerit placerat viverra. Vestibulum posuere odio purus, vel venenatis augue aliquam non. Cras sodales lacus vitae nisi consectetur, nec pellentesque mi euismod. Donec rhoncus dapibus molestie. Nam feugiat dolor diam, ut congue arcu imperdiet nec. Vivamus dictum auctor dolor, sed convallis urna posuere quis. Nunc ullamcorper laoreet porttitor. In bibendum urna ornare tristique sollicitudin. Mauris ac varius nunc. Curabitur pellentesque, ante quis eleifend consectetur, metus ligula sagittis magna, non laoreet nunc dui eu augue. Aliquam ultricies egestas imperdiet. Ut purus diam, egestas eu nulla volutpat, ultrices tempus odio.
+
+							</p>
+							<p>
+								Morbi id suscipit libero. Nunc suscipit et velit non cursus. Duis massa ipsum, facilisis sed tincidunt quis, convallis sit amet est. Etiam non dignissim est. Vestibulum vel lectus elit. Fusce venenatis, leo in pellentesque bibendum, nibh tellus consectetur sapien, non cursus massa libero euismod orci. Nunc nunc sapien, auctor eget tempus elementum, sagittis in sapien. Curabitur efficitur, tortor a molestie suscipit, sem nisl mattis orci, sit amet laoreet magna lacus et lorem. Sed orci lectus, tristique vestibulum ipsum et, placerat dapibus velit. Quisque sed consequat mi. Cras tincidunt, elit at vulputate sollicitudin, nunc elit lobortis dolor, sit amet lobortis velit tellus sit amet sem. Sed ac sodales urna. Sed quis diam orci. Vestibulum sit amet urna eget turpis aliquam venenatis at eget magna. Aliquam quam metus, commodo a malesuada in, iaculis in tortor. Duis euismod, libero ut efficitur posuere, nunc eros faucibus eros, eu ornare neque felis quis leo.
+
+							</p>
+							<p>
+								Pellentesque vitae odio vestibulum, scelerisque urna sed, fringilla ante. Duis in pulvinar dui, eu ultricies odio. Integer ac leo mauris. Quisque molestie volutpat dui, ultricies porta mi ornare eget. Vivamus sit amet nibh ornare, iaculis libero feugiat, blandit elit. Integer placerat lobortis enim, et mattis ex vehicula ut. Curabitur at dolor non neque facilisis mollis id sit amet neque. In tortor nisl, pharetra ac pellentesque vitae, condimentum in ex. Aliquam tincidunt dapibus nulla, in semper nibh molestie in.
+
+							</p>
+							<p>
+								In et lorem cursus, efficitur mi eget, condimentum purus. Aenean ut leo pellentesque, faucibus nisl at, egestas augue. In consectetur nisi interdum orci suscipit, accumsan efficitur mi sagittis. Integer eu nisi volutpat, malesuada magna eu, maximus dolor. Etiam hendrerit id erat nec dapibus. Curabitur at consequat elit. Vivamus tincidunt magna quis scelerisque tristique. Maecenas sodales vitae erat ut commodo. Proin rutrum lobortis risus, et vulputate leo maximus vitae. Sed nec nisl quis sapien malesuada tempus nec ac nisi. Ut eleifend massa id porta vehicula. Pellentesque sodales nibh eu blandit dignissim.
+
+							</p>
+							<p>
+								Aliquam erat volutpat. Phasellus iaculis scelerisque erat nec imperdiet. Phasellus tincidunt urna at lectus pharetra mollis. Mauris imperdiet dictum mollis. Pellentesque venenatis mauris sem, at vehicula magna lacinia pulvinar. Sed et tellus dictum, ornare ligula vitae, consequat velit. Nulla dictum urna vel nibh condimentum varius. Mauris non quam et nisl egestas sagittis.
+
+							</p>
+						</div>
+					</li>
+
+					<li id="pes3">
+						<a href="/">Elemento 3</a>
+						<div id="elemento3" class="contenido">
+							elemtnto3
+						</div>
+					</li>
+
+					<li id="pes4">
+						<a href="/">Elemento 4</a>
+						<div id="elemento4" class="contenido">
+							elemento4
+						</div>
+					</li>
+
+					<li id="pes5">
+						<a href="/">Elemento 5</a>
+						<div id="elemento5"class="contenido">
+							elemento5
+						</div>
+					</li>
+
+				</ul>
+
+			</nav>
+
+		</div>
+	</body>
+</html>
